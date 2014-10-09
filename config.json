@@ -1,0 +1,9 @@
+{
+  "compile": [400, 401, 403, 404, 405, 410, 413, 414, 418, 429, 500, 501, 502, 503, 504],
+  "content": {
+    "404": {
+      "title": "Nicht gefunden",
+      "body": "<p>Das, wonach du gesucht hast, ist momentan nicht unter dieser Adresse zu finden. Es sei denn, du hast diese Fehlermeldung gesucht – in diesem Fall: Glückwunsch, das war ein Volltreffer!</p>"
+    }
+  }
+}
