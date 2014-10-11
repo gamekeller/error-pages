@@ -13,7 +13,7 @@ gulp.task('clean', function(cb) {
 })
 
 gulp.task('default', ['clean'], function() {
-  return gulp.src('index.html')
+  return gulp.src('template.html')
     .pipe(inline())
     .pipe((function() {
       return through.obj(function(file, enc, cb) {
