@@ -1,7 +1,7 @@
 {
   "name": "gamekeller-error-pages",
   "private": true,
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Agnostic error pages for https://gamekeller.net",
   "author": "Heinrich Fenkart <hnrch02@gmail.com>",
   "license": "MIT",
