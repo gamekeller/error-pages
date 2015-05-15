@@ -4,6 +4,10 @@
     "404": {
       "title": "Nicht gefunden",
       "body": "<p>Das, wonach du gesucht hast, ist momentan nicht unter dieser Adresse zu finden. Es sei denn, du hast diese Fehlermeldung gesucht – in diesem Fall: Glückwunsch, das war ein Volltreffer!</p>"
+    },
+    "503": {
+      "title": "Wartungsarbeiten",
+      "body": "<p>Wir führen gerade Wartungsarbeiten an der Website durch. Komm doch etwas später nochmal vorbei, das sollte nicht allzu lange dauern.</p>"
     }
   }
 }
