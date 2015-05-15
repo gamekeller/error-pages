@@ -31,7 +31,7 @@ gulp.task('default', ['clean'], function() {
 
           var clone      = file.clone()
           clone.path     = path.resolve(clone.path, '../' + code + '.html')
-          clone.contents = new Buffer(template(clone.contents, data))
+          clone.contents = new Buffer(template(clone.contents)(data))
 
           this.push(clone)
         }, this)
