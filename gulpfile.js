@@ -8,8 +8,8 @@ var through     = require('through2')
 var template    = require('lodash.template')
 var statusCodes = require('http').STATUS_CODES
 
-gulp.task('clean', function(cb) {
-  del(['build'], cb)
+gulp.task('clean', function() {
+  return del(['build'])
 })
 
 gulp.task('default', ['clean'], function() {
@@ -19,14 +19,15 @@ gulp.task('default', ['clean'], function() {
       return through.obj(function(file, enc, cb) {
         config.compile.forEach(function(code) {
           var data = {
-            code: code,
-            title: statusCodes[code],
-            body: statusCodes[code]
+            code: code + ' ' + statusCodes[code],
+            title: null,
+            body: null,
+            nonce: null
           }
 
           if(config.content[code]) {
-            data.title = config.content[code].title || statusCodes[code]
-            data.body  = config.content[code].body  || statusCodes[code]
+            data.title = config.content[code].title
+            data.body  = config.content[code].body
           }
 
           var clone      = file.clone()
